@@ -6,16 +6,17 @@
     ignores = [ ".DS_Store" ".direnv" ];
     userName = "Sebastian Knill";
     userEmail = "sek@cyon.ch";
-    # includes = [{
-    #   condition = "gitdir:~/repos/private/";
-    #   contents = {
-    #     user.name = "Sebastian Knill";
-    #     user.email = "mail@sebastianknill.ch";
-    #     user.signingkey = "~/.ssh/id_cyon_ed25519.pub";
-    #   };
-    # }];
+    includes = [{
+      condition = "gitdir:~/repos/private/";
+      contents = {
+        user.name = "midgardfara";
+        user.email = "mail@sebastianknill.ch";
+        user.signingkey = "~/.ssh/id_private_ed25519.pub";
+      };
+    }];
     aliases = {
       s = "status";
+      test = "status";
       p = "pull";
       pp = "push";
       ppf = "push --force-with-lease";

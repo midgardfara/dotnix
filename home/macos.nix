@@ -20,7 +20,7 @@
   launchd.agents.load-ssh-keys = {
     enable = true;
     config = {
-      UserName = "js";
+      UserName = "sek";
       ProgramArguments = [ "/usr/bin/ssh-add" "--apple-load-keychain" ];
       RunAtLoad = true;
     };

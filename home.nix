@@ -12,6 +12,11 @@
   imports = map (x: ./home + x) [
     /macos.nix
     /packages.nix
+    /homebrew.nix 
+
+    # programms
     /programs/fish.nix
+    # /programs/starship.nix
+    /programs/git.nix
   ];
 }

@@ -17,6 +17,7 @@
     ripgrep
     wget
     vim
+    wireguard-tools
 
     # Programming
     elixir
