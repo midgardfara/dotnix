@@ -4,20 +4,36 @@
   nixpkgs.config.allowUnfree = true;
 
   home.packages = with pkgs; [
-    # Tools1
+    # Utils
+    fontconfig
+    
+    # Tools
     bottom
+    curl
+    fd
+    fzf
     httpie
+    nix-prefetch-github
+    ripgrep
+    wget
+    vim
 
     # Programming
+    elixir
+    nodejs_21
+    corepack_21
+    php
+    python39
+    ruby
 
     # LSPs and formatters
-
-    # Nix
+    json_c
+    sass
+    vscode-langservers-extracted
     
     # fonts
     
   ];
-
 
   programs.bat = {
     enable = true;
@@ -53,4 +69,5 @@
     enable = true;
     settings.updates.auto_update = true;
   };
+  
 }

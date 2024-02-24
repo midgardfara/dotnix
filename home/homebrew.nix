@@ -9,15 +9,34 @@ let
     "homebrew/core"
     "homebrew/services"
     "koekeishiya/formulae"
+    "support/cyon-tools"
   ];
 
   brews = [ 
   ];
 
   casks = [
+    "1password"
+    "amethyst"
+    "docker"
     "figma"
+    "firefox-developer-edition"
+    "google-chrome"		
+    "hyperkey"
+    "iterm2"
+    "maccy"
+    "seafile-client"
     "slack"
+    "notion"
+    "sony-ps-remote-play"
+    "affinity-publisher"
+    "affinity-photo"
+    "affinity-designer"
+    "spaceman"
+    "spotify"
+    "todoist"
     "visual-studio-code"
+    "whatsapp"
     "zoom"
   ];
 

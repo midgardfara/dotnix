@@ -16,4 +16,13 @@
   home.file.".hushlogin".text = "";
 
   fonts.fontconfig.enable = true;
+
+  launchd.agents.load-ssh-keys = {
+    enable = true;
+    config = {
+      UserName = "js";
+      ProgramArguments = [ "/usr/bin/ssh-add" "--apple-load-keychain" ];
+      RunAtLoad = true;
+    };
+  };
 }

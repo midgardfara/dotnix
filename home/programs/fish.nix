@@ -30,6 +30,9 @@
       # Sources
       /opt/homebrew/bin/brew shellenv | source
 
+      # Paths
+      fish_add_path $HOME/.local/bin
+
       if test -d (brew --prefix)"/share/fish/completions"
           set -gx fish_complete_path (brew --prefix)/share/fish/completions $fish_complete_path 
       end
@@ -51,16 +54,18 @@
       vi = "vim";
       svi = "sudo vi";
       edit = "vim";
+      cpwd = "pwd | tr -d '\n' | pbcopy && echo $PWD' copied to clipboard'";
       ".." = "z ..";
       "..." = "z ../..";
       "...." = "z ../../..";
       "....." = "z ../../../..";
+      "......" = "z ../../../../..";
     };
 
     functions = {
       fish_greeting = {
         description = "Overwrites default Greeting to show when starting a fish shell";
-        body = "echo 🐟";
+        body = "echo 'Hey 🐻'";
       };
       shell_level = {
         description = "show the current shell level as icon";
