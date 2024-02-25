@@ -16,7 +16,9 @@ let
   ];
 
   casks = [
-    "1password"
+    "affinity-designer"
+    "affinity-photo"
+    "affinity-publisher"
     "amethyst"
     "docker"
     "figma"
@@ -25,19 +27,21 @@ let
     "hyperkey"
     "iterm2"
     "maccy"
-    "seafile-client"
-    "slack"
     "notion"
+    "slack"
     "sony-ps-remote-play"
-    "affinity-publisher"
-    "affinity-photo"
-    "affinity-designer"
     "spaceman"
     "spotify"
     "todoist"
     "visual-studio-code"
     "whatsapp"
     "zoom"
+    #cyon
+    "1password"
+    "seafile-client"
+    #temp
+    "microsoft-teams"
+    "miro"
   ];
 
 in with lib; {
