@@ -3,12 +3,9 @@
 let
   taps = [
     "homebrew/bundle"
-    "homebrew/cask"
     "homebrew/cask-versions"
     "homebrew/cask-fonts"
-    "homebrew/core"
     "homebrew/services"
-    "koekeishiya/formulae"
     "support/cyon-tools"
   ];
 
@@ -40,7 +37,6 @@ let
     "1password"
     "seafile-client"
     #temp
-    "microsoft-teams"
     "miro"
   ];
 

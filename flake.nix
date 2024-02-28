@@ -10,14 +10,15 @@
   };
 
   outputs = { nixpkgs, home-manager, ... }:
-    let
-      system = "aarch64-darwin";
-      pkgs = nixpkgs.legacyPackages.${system};
-    in {
-      homeConfigurations.sek = home-manager.lib.homeManagerConfiguration {
-        inherit pkgs;
+  let
+    system = "aarch64-darwin";
+    pkgs = nixpkgs.legacyPackages.${system};
+  in {
+    homeConfigurations.sek = home-manager.lib.homeManagerConfiguration {
+      inherit pkgs;
 
-        modules = [ ./home.nix ];
-      };
+      modules = [ ./home.nix ];
     };
+  defaultPackage.${system} = home-manager.defaultPackage.${system};
+  };
 }
