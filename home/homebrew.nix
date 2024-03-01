@@ -25,6 +25,7 @@ let
     "iterm2"
     "maccy"
     "notion"
+    "raycast"
     "slack"
     "sony-ps-remote-play"
     "spaceman"

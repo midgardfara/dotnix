@@ -44,16 +44,16 @@
       # Hydro
       set -g hydro_symbol_prompt "$(shell_level)▶"
       set -U hydro_multiline true
-      set -U fish_prompt_pwd_dir_length 3
+      set -U fish_prompt_pwd_dir_length 2
+      set -U hydro_color_git "#CC5500"
+      set -U hydro_color_duration	grey
     '';
 
     shellAliases = { 
       ll = "eza -abhl --icons --group-directories-first";
       cl = "clear";
       mkdir = "mkdir -pv";
-      vi = "vim";
       svi = "sudo vi";
-      edit = "vim";
       cpwd = "pwd | tr -d '\n' | pbcopy && echo $PWD' copied to clipboard'";
       ".." = "z ..";
       "..." = "z ../..";
@@ -63,6 +63,20 @@
     };
 
     functions = {
+      hmm = {
+        description = "Home Manager Manager";
+        argumentNames = "DO";
+        body = ''
+          switch $DO
+            case brew
+              vim $HOME/repos/private/dotnix/home/homebrew.nix
+            case pkgs
+              vim $HOME/repos/private/dotnix/home/packages.nix
+            case '*'
+              home-manager $DO
+          end
+        '';
+      };
       fish_greeting = {
         description = "Overwrites default Greeting to show when starting a fish shell";
         body = "echo 'Hey 🐻'";
