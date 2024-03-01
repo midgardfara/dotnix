@@ -17,6 +17,7 @@ let
     "affinity-photo"
     "affinity-publisher"
     "amethyst"
+    "bitwarden"
     "docker"
     "figma"
     "firefox-developer-edition"

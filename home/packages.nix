@@ -5,6 +5,7 @@
 
   home.packages = with pkgs; [
     # Utils
+    bitwarden-cli
     fontconfig
     
     # Tools
@@ -15,8 +16,8 @@
     httpie
     nix-prefetch-github
     ripgrep
-    wget
     vim
+    wget
     wireguard-tools
 
     # Programming
