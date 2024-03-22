@@ -10,7 +10,11 @@
     NSGlobalDomain = {
       InitialKeyRepeat = 15;
       KeyRepeat = 1;
+      AppleShowAllFiles = true;
+      AppleShowAllExtensions = true;
+      "com.apple.swipescrolldirection" = true;
     };
+    "com.apple.screencapture".location = "~/Desktop/Screenshots/";
   };
 
   home.file.".hushlogin".text = "";
@@ -25,4 +29,6 @@
       RunAtLoad = true;
     };
   };
+  
 }
+
